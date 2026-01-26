@@ -1,0 +1,5 @@
+User1
+100
+0
+OWNED
+RENTALS
