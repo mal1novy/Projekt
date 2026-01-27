@@ -1,3 +1,4 @@
+#pragma once
 #include <string>
 #include <vector>
 #include "Rental.hpp"
@@ -45,3 +46,4 @@ public:
 
     void nextDays(int days);
 };
+
