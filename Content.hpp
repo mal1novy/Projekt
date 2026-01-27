@@ -1,3 +1,4 @@
+#pragma once
 #include <string>
 #include <iostream>
 
@@ -26,3 +27,4 @@ public:
     std::string serialize() const;
     void printInfo(std::ostream& os) const;
 };
+
