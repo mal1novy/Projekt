@@ -1,3 +1,4 @@
+#pragma once
 class Rental {
 private:
     int contentId;
@@ -12,3 +13,4 @@ public:
     void setDaysLeft(int d);
     void decreaseDay();
 };
+
