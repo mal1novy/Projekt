@@ -1,3 +1,4 @@
+#pragma once
 #include "Content.hpp"
 #include <string>
 
@@ -19,3 +20,4 @@ public:
 
     std::string getType() const override;
 };
+
