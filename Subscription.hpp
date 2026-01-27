@@ -1,3 +1,4 @@
+#pragma once
 class Subscription {
 private:
     int daysLeft;
@@ -14,3 +15,4 @@ public:
 
 
 };
+
