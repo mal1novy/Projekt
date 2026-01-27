@@ -1,3 +1,4 @@
+#pragma once
 #include <vector>
 #include <string>
 #include "Content.hpp"
@@ -28,3 +29,4 @@ public:
 
     void listByType(const std::string& type) const;
 };
+
