@@ -4,7 +4,6 @@
 
 class Game : public Content {
 protected:
-    std::string serializeDetails() const override;
     void printDetails(std::ostream& os) const override;
 
 private:
@@ -20,4 +19,5 @@ public:
 
     std::string getType() const override;
 };
+
 
