@@ -14,9 +14,10 @@ std::string Series::getType() const {
 
 
 void Series::printDetails(std::ostream& os) const {
-    os << " | sezony=" << seasons
-       << " | odcinki=" << episodes
+    os << " | seasons=" << seasons
+       << " | episodes=" << episodes
        << " | " << genre
        << " | " << quality;
 }
+
 
