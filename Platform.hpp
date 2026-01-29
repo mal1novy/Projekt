@@ -15,7 +15,6 @@ public:
     ~Platform();
 
     void loadFromFile(const std::string& filename);
-    void saveToFile(const std::string& filename) const;
 
     void listAll() const;
     Content* findById(int id) const;
@@ -29,4 +28,5 @@ public:
 
     void listByType(const std::string& type) const;
 };
+
 
