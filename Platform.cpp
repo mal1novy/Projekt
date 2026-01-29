@@ -134,20 +134,6 @@ void Platform::loadFromFile(const std::string& filename) {
     file.close();
 }
 
-void Platform::saveToFile(const std::string& filename) const {
-    std::ofstream file(filename);
-    if (!file.is_open()) {
-        std::cout << "Nie udalo sie zapisac do pliku: " << filename << "\n";
-        return;
-    }
-
-    for (Content* c : contents) {
-        file << c->serialize() << "\n";
-    }
-
-    file.close();
-}
-
 //Printuje katalog
 void Platform::listAll() const {
     if (contents.empty()) {
@@ -290,4 +276,5 @@ void Platform::playOrWatch(const User& user, int contentId) const {
         std::cout << "Brak dostepu do: " << c->getTitle() << "\n";
         std::cout << "Opcje: kup / wypozycz / subskrypcja (jesli tresc jest w sub).\n";
     }
+
 }
