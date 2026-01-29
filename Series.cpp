@@ -12,12 +12,6 @@ std::string Series::getType() const {
     return "SERIES";
 }
 
-std::string Series::serializeDetails() const {
-    return std::to_string(seasons) + ";" +
-           std::to_string(episodes) + ";" +
-           genre + ";" +
-           quality;
-}
 
 void Series::printDetails(std::ostream& os) const {
     os << " | sezony=" << seasons
@@ -25,3 +19,4 @@ void Series::printDetails(std::ostream& os) const {
        << " | " << genre
        << " | " << quality;
 }
+
