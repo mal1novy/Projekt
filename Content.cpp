@@ -9,15 +9,6 @@ int Content::getReleaseYear() const { return releaseYear; }
 double Content::getPrice() const { return price; }
 bool Content::isInSubscriptionPool() const { return inSubscriptionPool; }
 
-std::string Content::serialize() const {
-    return getType() + ";" +
-           std::to_string(id) + ";" +
-           title + ";" +
-           std::to_string(releaseYear) + ";" +
-           std::to_string(price) + ";" +
-           (inSubscriptionPool ? "1" : "0") + ";" +
-           serializeDetails();
-}
 
 void Content::printInfo(std::ostream& os) const {
     os << "[" << getType() << "] "
@@ -27,3 +18,4 @@ void Content::printInfo(std::ostream& os) const {
        << " | sub=" << (inSubscriptionPool ? "1" : "0");
     printDetails(os);
 }
+
