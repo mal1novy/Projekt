@@ -11,12 +11,10 @@ std::string Movie::getType() const {
     return "MOVIE";
 }
 
-std::string Movie::serializeDetails() const {
-    return std::to_string(durationMinutes) + ";" + genre + ";" + quality;
-}
 
 void Movie::printDetails(std::ostream& os) const {
     os << " | " << durationMinutes << "min"
        << " | " << genre
        << " | " << quality;
 }
+
