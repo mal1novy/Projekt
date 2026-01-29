@@ -18,6 +18,7 @@ void Game::printDetails(std::ostream& os) const {
     os << " | " << genre
        << " | " << playtimeHours << "h"
        << " | " << difficulty
-       << " | " << ageRating << std::endl;
+       << " | " << ageRating;
 }
+
 
