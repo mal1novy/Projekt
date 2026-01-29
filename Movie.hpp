@@ -9,7 +9,6 @@ private:
     std::string quality;
 
 protected:
-    std::string serializeDetails() const override;
     void printDetails(std::ostream& os) const override;
 
 public:
@@ -18,4 +17,5 @@ public:
 
     std::string getType() const override;
 };
+
 
