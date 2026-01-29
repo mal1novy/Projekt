@@ -13,12 +13,6 @@ std::string Game::getType() const {
     return "GAME";
 }
 
-std::string Game::serializeDetails() const {
-    return genre + ";" +
-           std::to_string(playtimeHours) + ";" +
-           difficulty + ";" +
-           ageRating;
-}
 
 void Game::printDetails(std::ostream& os) const {
     os << " | " << genre
@@ -26,3 +20,4 @@ void Game::printDetails(std::ostream& os) const {
        << " | " << difficulty
        << " | " << ageRating << std::endl;
 }
+
